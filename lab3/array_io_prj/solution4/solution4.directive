@@ -28,11 +28,6 @@
                 <option name="dim" value="1"/>
             </pragma>
         </directive>
-        <directive functionName="array_io" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="array_io"/>
-            </pragma>
-        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

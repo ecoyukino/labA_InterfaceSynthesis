@@ -37,6 +37,16 @@
 			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/.apc/.tb</location>
 		</link>
 		<link>
+			<name>RollDualPort/constraints</name>
+			<type>2</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/RollDualPort/.tcls</location>
+		</link>
+		<link>
+			<name>sol2Out2/constraints</name>
+			<type>2</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/sol2Out2/.tcls</location>
+		</link>
+		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
 			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution1/.tcls</location>
@@ -57,6 +67,21 @@
 			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution4/.tcls</location>
 		</link>
 		<link>
+			<name>solution5/constraints</name>
+			<type>2</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution5/.tcls</location>
+		</link>
+		<link>
+			<name>solution6/constraints</name>
+			<type>2</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution6/.tcls</location>
+		</link>
+		<link>
+			<name>solution7/constraints</name>
+			<type>2</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.tcls</location>
+		</link>
+		<link>
 			<name>source/array_io.c</name>
 			<type>1</type>
 			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io.c</location>
@@ -70,6 +95,41 @@
 			<name>testbench/result.golden.dat</name>
 			<type>1</type>
 			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/result.golden.dat</location>
+		</link>
+		<link>
+			<name>unrolled/constraints</name>
+			<type>2</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/unrolled/.tcls</location>
+		</link>
+		<link>
+			<name>RollDualPort/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/RollDualPort/RollDualPort.directive</location>
+		</link>
+		<link>
+			<name>RollDualPort/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/RollDualPort/directives.tcl</location>
+		</link>
+		<link>
+			<name>RollDualPort/constraints/script.tcl</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/RollDualPort/script.tcl</location>
+		</link>
+		<link>
+			<name>sol2Out2/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/sol2Out2/sol2Out2.directive</location>
+		</link>
+		<link>
+			<name>sol2Out2/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/sol2Out2/directives.tcl</location>
+		</link>
+		<link>
+			<name>sol2Out2/constraints/script.tcl</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/sol2Out2/script.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
@@ -130,6 +190,66 @@
 			<name>solution4/constraints/script.tcl</name>
 			<type>1</type>
 			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution4/script.tcl</location>
+		</link>
+		<link>
+			<name>solution5/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution5/solution5.directive</location>
+		</link>
+		<link>
+			<name>solution5/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution5/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution5/constraints/script.tcl</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution5/script.tcl</location>
+		</link>
+		<link>
+			<name>solution6/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution6/solution6.directive</location>
+		</link>
+		<link>
+			<name>solution6/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution6/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution6/constraints/script.tcl</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution6/script.tcl</location>
+		</link>
+		<link>
+			<name>solution7/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/solution7.directive</location>
+		</link>
+		<link>
+			<name>solution7/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution7/constraints/script.tcl</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/script.tcl</location>
+		</link>
+		<link>
+			<name>unrolled/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/unrolled/unrolled.directive</location>
+		</link>
+		<link>
+			<name>unrolled/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/unrolled/directives.tcl</location>
+		</link>
+		<link>
+			<name>unrolled/constraints/script.tcl</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/unrolled/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

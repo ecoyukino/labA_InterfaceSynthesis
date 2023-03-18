@@ -43,11 +43,6 @@
                 <option name="rewind" value="" positionalBoolean="1"/>
             </pragma>
         </directive>
-        <directive functionName="axi_interfaces" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="axi_interfaces"/>
-            </pragma>
-        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

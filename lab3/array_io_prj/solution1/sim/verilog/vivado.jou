@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Sat Mar 18 16:38:58 2023
-# Process ID: 12488
+# Start of session at: Tue Mar 21 01:41:04 2023
+# Process ID: 28212
 # Current directory: D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution1/sim/verilog
 # Command line: vivado.exe -source open_wave.tcl
 # Log file: D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution1/sim/verilog/vivado.log

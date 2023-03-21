@@ -36,11 +36,6 @@
                 <option name="port" positionalBoolean="4" value="d_i"/>
             </pragma>
         </directive>
-        <directive functionName="array_io" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="array_io"/>
-            </pragma>
-        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

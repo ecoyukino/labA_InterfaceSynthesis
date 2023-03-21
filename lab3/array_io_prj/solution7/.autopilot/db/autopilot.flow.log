@@ -633,3 +633,167 @@ Command   csynth_design done; 4.509 sec.
 INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.509 seconds; current allocated memory: 0.000 MB.
 Command ap_source done; 6.052 sec.
 Execute cleanup_all 
+INFO-FLOW: Workspace D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7 opened at Sat Mar 18 22:43:42 +0800 2023
+Execute     ap_set_clock -name default -period 4 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+Execute     set_part xcvu9p-flgb2104-1-e 
+Execute       create_platform xcvu9p-flgb2104-1-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2022.1\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2022.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xcvu9p-flgb2104-1-e'
+Command       create_platform done; 1.327 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xcvu9p-flgb2104-1-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.429 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_interface -m_axi_latency=0 
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=0
+Execute     config_interface -m_axi_latency=0 
+Command   open_solution done; 1.451 sec.
+Execute   set_part xcvu9p-flgb2104-1-e 
+INFO: [HLS 200-1510] Running: set_part xcvu9p-flgb2104-1-e 
+Execute     create_platform xcvu9p-flgb2104-1-e -board  
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xcvu9p-flgb2104-1-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.122 sec.
+Execute   create_clock -period 4 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 4 -name default 
+Execute   config_interface -m_axi_latency 0 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_latency 0 
+Execute   source ./array_io_prj/solution7/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./array_io_prj/solution7/directives.tcl
+Execute     set_directive_top -name array_io array_io 
+INFO: [HLS 200-1510] Running: set_directive_top -name array_io array_io 
+Execute     set_directive_unroll array_io/For_Loop 
+INFO: [HLS 200-1510] Running: set_directive_unroll array_io/For_Loop 
+Execute     set_directive_interface -mode ap_fifo array_io d_o 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode ap_fifo array_io d_o 
+Execute     set_directive_array_partition -type cyclic -factor 8 -dim 1 array_io d_o 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -type cyclic -factor 8 -dim 1 array_io d_o 
+Execute     set_directive_array_partition -type cyclic -factor 8 -dim 1 array_io d_i 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -type cyclic -factor 8 -dim 1 array_io d_i 
+Execute     set_directive_interface -mode ap_fifo array_io d_i 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode ap_fifo array_io d_i 
+Execute   cosim_design -trace_level all 
+INFO: [HLS 200-1510] Running: cosim_design -trace_level all 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/global.setting.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/global.setting.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/interface.gen 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=4.000 (was NA)
+Execute     ap_part_info -name xcvu9p-flgb2104-1-e -data names -quiet 
+Execute     ap_part_info -name xcvu9p-flgb2104-1-e -data info -quiet 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/global.setting.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.rtl_wrap.cfg.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xcvu9p-flgb2104-1-e -data info 
+INFO-FLOW: TB processing: D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_test.c D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/./sim/autowrap/testbench/array_io_test.c_pre.c
+Execute     clang_tidy xilinx-tb-process -desc tb-process D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/./sim/autowrap/testbench/array_io_test.c_pre.c.tb.c std=gnu89 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/./sim/autowrap/testbench/array_io_test.c_pre.c.tb.c -- -std=gnu89 -fhls -ferror-limit=0
+Execute     ap_part_info -name xcvu9p-flgb2104-1-e -data info 
+INFO-FLOW: TB processing: D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io.c D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/./sim/autowrap/testbench/array_io.c_pre.c
+Execute     clang_tidy xilinx-tb-process -desc tb-process D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/./sim/autowrap/testbench/array_io.c_pre.c.tb.c std=gnu89 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/./sim/autowrap/testbench/array_io.c_pre.c.tb.c -- -std=gnu89 -fhls -ferror-limit=0
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/global.setting.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.rtl_wrap.cfg.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.rtl_wrap.cfg.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.rtl_wrap.cfg.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     ap_part_info -name xcvu9p-flgb2104-1-e -data info 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.rtl_wrap.cfg.tcl 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 0.265 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     ap_part_info -name xcvu9p-flgb2104-1-e -data info 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.rtl_wrap.cfg.tcl 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+Execute     source D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.autopilot/db/array_io.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source dataflow_monitor_API.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 6.896 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+Command   cosim_design done; 17.867 sec.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 17.867 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 19.533 sec.
+Execute cleanup_all 

@@ -6,8 +6,8 @@
     <file name="axi_interfaces.c" sc="0" tb="false" cflags="" blackbox="false" csimflags=""/>
   </files>
   <solutions>
-    <solution name="solution1" status="inactive"/>
-    <solution name="solution2" status="active"/>
+    <solution name="solution1" status="active"/>
+    <solution name="solution2" status="inactive"/>
   </solutions>
   <includePaths/>
   <libraryPaths/>

@@ -82,6 +82,11 @@
 			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/.tcls</location>
 		</link>
 		<link>
+			<name>solution8/constraints</name>
+			<type>2</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution8/.tcls</location>
+		</link>
+		<link>
 			<name>source/array_io.c</name>
 			<type>1</type>
 			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io.c</location>
@@ -235,6 +240,21 @@
 			<name>solution7/constraints/script.tcl</name>
 			<type>1</type>
 			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution7/script.tcl</location>
+		</link>
+		<link>
+			<name>solution8/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution8/solution8.directive</location>
+		</link>
+		<link>
+			<name>solution8/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution8/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution8/constraints/script.tcl</name>
+			<type>1</type>
+			<location>D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution8/script.tcl</location>
 		</link>
 		<link>
 			<name>unrolled/constraints/.xml.directive</name>

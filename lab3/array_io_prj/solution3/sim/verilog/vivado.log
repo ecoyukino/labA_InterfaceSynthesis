@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Sat Mar 18 19:32:44 2023
-# Process ID: 9372
+# Start of session at: Tue Mar 21 02:26:43 2023
+# Process ID: 10140
 # Current directory: D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution3/sim/verilog
 # Command line: vivado.exe -source open_wave.tcl
 # Log file: D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution3/sim/verilog/vivado.log
@@ -28,4 +28,4 @@ open_wave_config D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solutio
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Sat Mar 18 20:44:40 2023...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 21 02:51:26 2023...
